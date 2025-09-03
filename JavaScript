@@ -1,0 +1,11 @@
+// JavaScript for background change
+function changeBackground() {
+  const colors = [
+    "linear-gradient(135deg, #74ebd5, #ACB6E5)",
+    "linear-gradient(135deg, #ff9a9e, #fad0c4)",
+    "linear-gradient(135deg, #a18cd1, #fbc2eb)",
+    "linear-gradient(135deg, #fddb92, #d1fdff)"
+  ];
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  document.body.style.background = randomColor;
+}
